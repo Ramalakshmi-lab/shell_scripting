@@ -2,6 +2,5 @@
  one=$1
  two=$2
 
- echo "$1"
- echo "$2"
- 
+ echo "$one"
+ echo "$two"
