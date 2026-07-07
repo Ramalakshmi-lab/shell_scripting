@@ -13,4 +13,5 @@ if [ $? -ne 0 ]
 then 
     echo "installation failed"
     exit 1
+fi
 echo "final"
