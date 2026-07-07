@@ -9,5 +9,5 @@ else
 fi
 for i in @$
 do 
-    echo "install :"
+    echo "install: $i"
 done
