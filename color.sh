@@ -8,10 +8,10 @@ validate()
 {
     if [ $1 -ne 0 ]
     then 
-        echo "\e[31m$2 ..failed"
+        echo "\e[31m $2 ..failed"
         exit 1
     else
-        echo "\e[32m$2..success"
+        echo "\e[32m $2..success"
     fi
 
 }
