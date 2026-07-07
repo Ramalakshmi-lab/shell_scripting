@@ -1,7 +1,7 @@
 #!/bin/bash
 
 user=$(id -u)
-if [$user -ne 0 ]
+if [ $user -ne 0 ]
 then 
     echo " run with super user access"
 else
