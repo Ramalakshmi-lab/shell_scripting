@@ -1,8 +1,8 @@
 #!/bin/bash
+
 validate()
 {
     echo "$!"
-    validate
     echo "$2"
 }
 user=$(id -u)
