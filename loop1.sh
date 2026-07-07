@@ -7,4 +7,7 @@ then
 else 
     echo "installed using suoer user"
 fi
-echo "install $@"
+for i in @$
+do 
+    echo "install :"
+done
