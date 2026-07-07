@@ -7,7 +7,8 @@ then
 else 
     echo "installed using suoer user"
 fi
-for i in @$
+for i in $@
 do 
     echo "install: $i"
+    dnf list installed
 done
