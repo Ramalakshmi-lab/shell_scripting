@@ -3,9 +3,9 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 echo "$LOGFILE"
-R=\e[31m
-G=\e[32m
-N=\e[0m
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 validate()
 {
