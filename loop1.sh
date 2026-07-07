@@ -1,4 +1,5 @@
 #!/bin/bash
+
 user=$(id -u)
 if [ $user -ne 0 ]
 then 
@@ -10,5 +11,4 @@ fi
 for i in $@
 do 
     echo "install: $i"
-    dnf list installed
 done
