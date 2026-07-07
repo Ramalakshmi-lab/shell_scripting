@@ -10,7 +10,7 @@ then
     echo "use sudo su"
 else
     echo "installation started..."
-    dnf install mariadb105-server -y
+    dnf install mariadb105-serverr -y
     validate $? "installation done"
 fi
 
