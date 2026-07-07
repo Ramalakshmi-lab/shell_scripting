@@ -7,13 +7,13 @@ then
     exit 1
 else
     echo "install the mysql"
-fi
-yum install mysql -y
-if [ $? -ne 0 ]
-then 
+    yum install mysql -y
+   if [ $? -ne 0 ]
+   then 
     echo "installation failed"
     exit 1
-else
+   else
     echo "installed succesfully"
+   fi
 fi
 echo "final end of script"
