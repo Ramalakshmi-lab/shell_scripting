@@ -9,3 +9,4 @@ else
     echo "install the mysql"
 fi
 yum install mysqll -y
+echo "final"
