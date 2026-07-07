@@ -21,7 +21,7 @@ if [ $user -ne 0 ]
 then 
     echo "user sudo su"
 else
-    dnf install mariadb105-server -y &>>$LOGFILE
+    dnf install mariadb105-serve -y &>>$LOGFILE
     validate $? "mysql instalation"
 fi
     
