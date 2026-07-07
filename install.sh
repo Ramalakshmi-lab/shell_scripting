@@ -1,19 +1,21 @@
 #!/bin/bash
 
 user=$(id -u)
-if [ $user -ne 0 ]
-then 
-    echo " run with super user access"
+
+if [ "$user" -ne 0 ]; then
+    echo "Run with super user access"
+    echo "Trying with sudo..."
+    sudo yum install mysql -y
+else
+    echo "Installing MySQL..."
+    yum install mysql -y
+fi
+
+if [ $? -ne 0 ]; then
+    echo "Installation failed"
     exit 1
 else
-    echo "install the mysql"
-    yum install mysql -y
-   if [ $? -ne 0 ]
-   then 
-    echo "installation failed"
-    exit 1
-   else
-    echo "installed succesfully"
-   fi
+    echo "Installed successfully"
 fi
-echo "final end of script"
+
+echo "Final end of script"
