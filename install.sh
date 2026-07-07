@@ -9,4 +9,8 @@ else
     echo "install the mysql"
 fi
 yum install mysqll -y
+if [ $? -ne 0 ]
+then 
+    echo "installation failed"
+    exit 1
 echo "final"
