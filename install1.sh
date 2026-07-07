@@ -2,6 +2,7 @@
 validate()
 {
     echo "$!"
+    validate
     echo "$2"
 }
 user=$(id -u)
@@ -10,7 +11,7 @@ then
     echo "use sudo su"
 else
     echo "installation started..."
-    dnf install mariadb105-serverr -y
+    dnf install mariadb105-server -y
     validate $? "installation done"
 fi
 
