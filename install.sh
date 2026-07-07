@@ -8,4 +8,4 @@ then
 else
     echo "install the mysql"
 fi
-dnf install mysql -y
+yum install mysqll -y
