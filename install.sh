@@ -7,8 +7,7 @@ if [ "$user" -ne 0 ]; then
     exit 1
 else
     echo "Installing MySQL..."
-    yum install mariadb-server -y
-
+    yum install mariadb -y
     if [ $? -ne 0 ]; then
         echo "Installation failed"
         exit 1
