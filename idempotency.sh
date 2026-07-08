@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dir="/tmp/myapp"
-if [ ! -d $dir]
+if [ ! -d $dir ]
 then
     echo "directory not found"
     mkdir -p $dir
