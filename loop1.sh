@@ -25,7 +25,7 @@ fi
 for i in $@
 do 
     echo "install: $i"
-    dnf list install $i &>>LOGFILE 
+    dnf list installed $i &>>$LOGFILE 
     if [ $i -eq 0 ]
     then 
         echo "$i package already installed"
